@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+ <head>
+		<% base_tag %>
+		$MetaTags
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
+		
+</head>
+<body>
+<!-- wrap starts here -->
+<div id="wrap">
+	<div id="header">
+		<div id="header-content">	
+			
+			$HomePageObject.Logo_Image
+			
+			<% if Translations %>
+			<div id="lang" class="clear">
+				<ul class="clear">
+			  	<% control Translations %>
+			    <li class="lang-flag">
+			        <a href="$Link" hreflang="$Locale.RFC1766" title="$Title - $Locale.Nice">
+			            <img src="$ThemeDir/images/lang-<% sprintf(_t('IMAGE','%2.2s'),$Locale.RFC1766) %>.gif">
+			            English
+			        </a>
+			    </li>
+			 	<% end_control %>
+				</ul>    
+			</div>                
+			<% end_if %>
+				
+			<% include Navigation %>	
+		</div>
+	</div>
+	
+	<div class="home_hero_image">
+		$Home_HeroImage.SetWidth(1600)
+	</div>
+			
+	<!-- content-wrap starts here -->
+	<div id="content-wrap"><div id="content">		
+		<% include SideBar %>
+		<div id="main">		
+			$Layout					
+		</div>					
+		
+	<!-- content-wrap ends here -->		
+	</div></div>
+<!-- footer starts here -->	
+<% include Footer %>
+<!-- footer ends here -->	
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>
