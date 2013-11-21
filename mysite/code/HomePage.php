@@ -4,14 +4,16 @@ class HomePage extends Page {
 	);
 	static $has_one = array(
 			'Home_HeroImage' => 'Image',
-			'Logo_Image'     => 'Image'
+			'Logo_Image'     => 'Image',
+			'Welcome_Msg' => 'Varchar',
 	);
 	 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 		 
-		 $fields->addFieldToTab("Root.Content.Images", new ImageField('Home_HeroImage', 'Hero Image (1600 x 420)'));
-		 $fields->addFieldToTab("Root.Content.Images", new ImageField('Logo_Image', 'Company Logo (200 x 100)'));
+		$fields->addFieldToTab('Root.Content.Main', new TextField('Welcome_Msg', 'Welcome Message'));
+		$fields->addFieldToTab("Root.Content.Images", new ImageField('Home_HeroImage', 'Hero Image (1600 x 420)'));
+		$fields->addFieldToTab("Root.Content.Images", new ImageField('Logo_Image', 'Company Logo (200 x 100)'));
 		 
 		return $fields;
 	}

@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
 		
 </head>
-<body>
+<body class="$BodyCssClass">
 <!-- wrap starts here -->
 <div id="wrap">
 	<div id="header">
@@ -42,7 +42,6 @@
 			
 	<!-- content-wrap starts here -->
 	<div id="content-wrap"><div id="content">		
-		<% include SideBar %>
 		<div id="main">		
 			$Layout					
 		</div>					

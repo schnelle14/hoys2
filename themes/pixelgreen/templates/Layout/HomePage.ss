@@ -1,5 +1,9 @@
 
 
 <div class="typography">
-sasasa
+		$Welcome_Msg
+		$Content
 </div>
+<div id="latest_projects">
+</div>
+
