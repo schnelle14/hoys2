@@ -6,7 +6,16 @@ class Page extends SiteTree {
 	);
 
 	public static $has_one = array(
+			'Small_HeroImage' => 'Image'
 	);
+	
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab("Root.Content.Images", new ImageField('Small_HeroImage', 'Hero Image (1600 x 230)'));
+			
+		return $fields;
+	}
 	
 	public function HomePageObject()
 	{
@@ -23,9 +32,8 @@ class Page extends SiteTree {
 		//var_dump($this->homePage); exit;
 		return $this->homePage;
 	}
-	
-
 }
+
 class Page_Controller extends ContentController {
 	
 	/**
@@ -56,7 +64,7 @@ class Page_Controller extends ContentController {
 		parent::init();
 		// add css classes for the body
 		$this->addBodyCssClass('PageType_' . $this->data()->getField('ClassName'));
-		$this->addBodyCssClass('UrlSegment_' . $this->data()->getField('URLSegment'));
+		
 		// Note: you should use SS template require tags inside your templates 
 		// instead of putting Requirements calls here.  However these are 
 		// included so that our older themes still work
@@ -64,7 +72,8 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('typography'); 
 		Requirements::themedCSS('form'); 
 		
-		//var_dump(HomePage::Logo_Image); exit;
+		//var_dump($this->Small_HeroImageID); exit;
+		//var_dump($Small_HeroImageID); exit;
 	}
 	
 	/**
@@ -85,5 +94,20 @@ class Page_Controller extends ContentController {
 	public function BodyCssClass()
 	{
 		return implode(' ', $this->body_css_classes);
+	}
+	
+	public function isHomePage(){
+		if ($this->BodyCssClass() == "PageType_HomePage"){
+			return true;
+		}
+		return false;
+	}
+	
+	public function heroImageExists(){
+		//var_dump($this->Small_HeroImageID); exit;
+		if ($this->Small_HeroImageID > 0){
+			return true;
+		}
+		return false;
 	}
 }

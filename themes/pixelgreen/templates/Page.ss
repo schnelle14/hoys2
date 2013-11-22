@@ -36,9 +36,15 @@
 		</div>
 	</div>
 	
+	<% if isHomePage %>
 	<div class="home_hero_image">
 		$Home_HeroImage.SetWidth(1600)
 	</div>
+	<% else %>
+	<div class="hero_image">
+		<% if heroImageExists %>$Small_HeroImage.SetWidth(1600)<% else %>$HomePageObject.SmallDefault_HeroImage<% end_if %>
+	</div>
+	<% end_if %>
 			
 	<!-- content-wrap starts here -->
 	<div id="content-wrap"><div id="content">		
