@@ -42,6 +42,7 @@
 	</div>
 	<% else %>
 	<div class="hero_image">
+		<p class="pagetitle">$Title</p>
 		<% if heroImageExists %>$Small_HeroImage.SetWidth(1600)<% else %>$HomePageObject.SmallDefault_HeroImage<% end_if %>
 	</div>
 	<% end_if %>

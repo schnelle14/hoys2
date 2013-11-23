@@ -11,6 +11,10 @@ class ContactUsPage extends Page {
 	static $has_many = array(
 			'StaffContacts'    => 'StaffContact'
 	);
+	
+	static $has_one = array (
+	
+	);
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -44,4 +48,46 @@ class ContactUsPage extends Page {
 }
 class ContactUsPage_Controller extends Page_Controller {
 
+	//public function init(){
+		//$this->StaffContacts = DataObject::get("StaffContact");
+	//}
+	
+	public function landLineExists(){
+		if ($this->Landline_no == null){
+			return false;
+		}
+		return true;
+	}
+	public function mobileNoExists(){
+		if ($this->Mobile_no == null){
+			return false;
+		}
+		return true;
+	}
+	public function faxNoExists(){
+		if ($this->Fax_no == null){
+			return false;
+		}
+		return true;
+	}
+	public function postalAddExists(){
+		if ($this->Postal_add == null){
+			return false;
+		}
+		return true;
+	}
+	public function teamEmailExists(){
+		//$tempo1 = DataObject::get("StaffContact");
+		//var_dump($this->StaffContacts); exit;
+		if ($this->Team_email == null){
+			return false;
+		}
+		return true;
+	}
+	
+	public function getStaffContacts(){
+		$contacts = DataObject::get("StaffContact");
+		return $contacts;
+	}
+	
 }

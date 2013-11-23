@@ -43,7 +43,7 @@ th {
 	border-bottom: solid 2px #FFF;
 }
 tr {
-	height: 30px;
+	 height: 22px;
 }
 td {
 	padding: 0;
@@ -179,12 +179,12 @@ input.button {
 	font-weight: normal;
 }
 #header-content li.navtext a:hover {
-	background: #65944A;
-	color: #FFF;
+	color: #87cefa;
+	text-decoration: none;
 }
 
 #header-content li.navtext span a.current  {
-	color: #FFF;
+	color: #fff;
 	border-bottom: 1px solid #fff;
 	padding-bottom: 3px;
 	font-weight: bolder;
@@ -473,11 +473,22 @@ ul#SearchResults li {
     width: 100%;
     height: 400px;
 }
+.hero_image {
+    position: relative;
+}
 .hero_image img {
     height: 230px;
     width: 100%;
 }
-
+.pagetitle {
+    bottom: 0;
+    font-size: 48px;
+    left: 0;
+    margin-bottom: 38px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+}
 /* Homepage content
 ****************************************/
 .PageType_HomePage .typography{
@@ -495,4 +506,33 @@ ul#SearchResults li {
     font-size: 20px;
     font-weight: bolder;
     margin: 30px 0 10px 25px;
+}
+
+/* Contact Us Page
+****************************************/
+.team_contact {
+    margin: 40px 1px;
+}
+.team_contact p {
+    text-align: center;
+    font-size: 20px;
+}
+.team_contact p.big_contact_label {
+    font-weight: bolder;
+}
+.staff_contact_container {
+    border-top: 1px solid #c1cdcd;
+    padding-top: 25px;
+}
+.staff_contact_container div {
+    display: inline-flex;
+    width: 33%;
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+.contact_name {
+    font-weight: bold;
+}
+.small_contact_label {
+    width: 50px;
 }
