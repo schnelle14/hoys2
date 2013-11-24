@@ -18,8 +18,7 @@ class Page extends SiteTree {
 	}
 	
 	public function HomePageObject()
-	{
-		
+	{	
 			$filter = "ClassName IN('HomePage') ";
 	
 			$pages = DataObject::get('SiteTree', $filter, "Status = 'Published'");
@@ -29,8 +28,22 @@ class Page extends SiteTree {
 			}
 	
 			$this->homePage = $pages->First();
-		//var_dump($this->homePage); exit;
 		return $this->homePage;
+	}
+	
+	public function ContactUsPageObject()
+	{
+		$filter = "ClassName IN('ContactUsPage') ";
+	
+		$pages = DataObject::get('SiteTree', $filter, "Status = 'Published'");
+	
+		if(count($pages) == 0) {
+			return null;
+		}
+	
+		$this->contactUsPage = $pages->First();
+		//var_dump($this->contactUsPage); exit;
+		return $this->contactUsPage;
 	}
 }
 
@@ -104,7 +117,6 @@ class Page_Controller extends ContentController {
 	}
 	
 	public function heroImageExists(){
-		//var_dump($this->Small_HeroImageID); exit;
 		if ($this->Small_HeroImageID > 0){
 			return true;
 		}
