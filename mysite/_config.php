@@ -31,3 +31,4 @@ Object::add_extension('SiteConfig', 'Translatable'); // 2.4 or newer only
 // enable nested URLs for this site (e.g. page/sub-page/)
 SiteTree::enable_nested_urls();
 
+Security::setDefaultAdmin('admin','password');
