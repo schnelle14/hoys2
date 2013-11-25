@@ -536,7 +536,7 @@ ul#SearchResults li {
     padding-top: 25px;
 }
 .staff_contact_container div {
-    display: inline-flex;
+    display: inline-block;
     width: 33%;
     margin-bottom: 20px;
     min-height: 90px;
