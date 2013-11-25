@@ -4,6 +4,5 @@
 	</div>
 		$Content
 </div>
-<div id="latest_projects">
-</div>
+
 
