@@ -3,7 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
  <head>
 		<% base_tag %>
+		
 		$MetaTags
+
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
@@ -24,7 +26,7 @@
 			    <li class="lang-flag">
 			        <a href="$Link" hreflang="$Locale.RFC1766" title="$Title - $Locale.Nice">
 			            <img src="$ThemeDir/images/lang-<% sprintf(_t('IMAGE','%2.2s'),$Locale.RFC1766) %>.gif">
-			            English
+			           <% _t('language','English') %>
 			        </a>
 			    </li>
 			 	<% end_control %>

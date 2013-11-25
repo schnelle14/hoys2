@@ -87,6 +87,9 @@ class Page_Controller extends ContentController {
 		
 		//var_dump($this->Small_HeroImageID); exit;
 		//var_dump($Small_HeroImageID); exit;
+		if($this->dataRecord->hasExtension('Translatable')) {
+			i18n::set_locale($this->dataRecord->Locale);
+		}
 	}
 	
 	/**
