@@ -17,7 +17,8 @@ body {
 	font: normal 73%/1.5em 'Open Sans', serif-serif;
 	color: #555;
 	background-color: #003a68;
-	text-align: center;		
+	text-align: center;	
+		
 }
 
 /* links */
@@ -316,7 +317,7 @@ input.button {
 #footer {
 	clear: both;
 	margin: 0; padding: 0;
-	font-size: 0.85em;
+	font-size: 0.95em;
 	text-align: left;	
 	height: 125px;
 	color: #fff;

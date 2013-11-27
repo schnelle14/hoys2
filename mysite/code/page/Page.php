@@ -125,4 +125,32 @@ class Page_Controller extends ContentController {
 		}
 		return false;
 	}
+	
+	public function getLocale(){
+		return $this->dataRecord->Locale;
+	}
+	
+	public function isEnglish(){
+		
+		if ($this->dataRecord->Locale == "en_NZ"){
+			return true;
+		}
+		return false;
+	}
+	
+	public function isChinese(){
+		//var_dump($this->dataRecord->Locale); exit;
+		if ($this->dataRecord->Locale == "zh_cmn"){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
