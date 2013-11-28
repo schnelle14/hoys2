@@ -548,3 +548,31 @@ ul#SearchResults li {
 .small_contact_label {
     width: 50px;
 }
+
+/* About Us
+******************************************/
+.PageType_AboutUsPage .typography{
+	text-align: center;
+	margin-top: 40px;
+}
+.staff_container {
+    margin-top: 40px;
+}
+.staff_detail{
+	width: 30%;
+	display: inline-block;
+}
+.staff_name td {
+	    height: 20px;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.staff_position td {
+    font-size: 13px;
+    font-style: italic;
+}
+.staff_description td {
+    height: 200px;
+    padding: 0 20px;
+}

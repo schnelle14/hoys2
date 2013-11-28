@@ -5,7 +5,6 @@
 	<div class="staff_container">
 		<% control getStaffAbouts %>
 			<div class="staff_detail">
-			
 				<table>
 					<tr class="staff_photo">
 						<td>
@@ -38,7 +37,6 @@
 	<div class="staff_container">
 		<% control getStaffAbouts %>
 			<div class="staff_detail">
-			
 				<table>
 					<tr class="staff_photo">
 						<td>
