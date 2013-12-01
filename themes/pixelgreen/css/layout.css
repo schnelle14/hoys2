@@ -18,6 +18,7 @@ body {
 	color: #555;
 	background-color: #003a68;
 	text-align: center;	
+	min-width: 1500px;
 		
 }
 
@@ -483,6 +484,7 @@ ul#SearchResults li {
 .home_hero_image img {
     width: 100%;
     height: 400px;
+    min-width: 1500px;
 }
 .hero_image, .home_hero_image {
     position: relative;
@@ -491,6 +493,7 @@ ul#SearchResults li {
 .hero_image img {
     height: 230px;
     width: 100%;
+    min-width: 1500px;
 }
 .pagetitle {
     bottom: 0;
