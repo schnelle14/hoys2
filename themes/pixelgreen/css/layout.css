@@ -22,7 +22,7 @@ body {
 }
 
 /* links */
-a { background: inherit; color: #fff; text-decoration: none; }
+a { background: inherit; text-decoration: none; }
 a:hover { background: inherit; color: #006699; text-decoration: underline; }
 
 /* start - table */
@@ -145,7 +145,7 @@ input.button {
 	/* change the values of left and top to adjust the position of the logo */
 	top: 0; left: 0px;
 }
-#header-content h1#logo a {
+#header-content  a {
 	text-decoration: none;
 	color: #FFF;
 }
@@ -551,7 +551,8 @@ ul#SearchResults li {
 
 /* About Us
 ******************************************/
-.PageType_AboutUsPage .typography{
+.PageType_AboutUsPage .typography, 
+.PageType_ProjectsContainerPage .typography{
 	text-align: center;
 	margin-top: 40px;
 }
@@ -575,4 +576,26 @@ ul#SearchResults li {
 .staff_description td {
     height: 200px;
     padding: 0 20px;
+}
+
+/* Projects Container
+*******************************************/
+.PageType_ProjectsContainerPage h3{
+	margin-left: 0;
+}
+.projects_container_div {
+    border-top: 1px solid #c1cdcd;
+    margin: 8px 0 35px;
+    padding-top: 25px;
+}
+.project_holder {
+    width: 24.7%;
+    display: inline-block;
+}
+.project_holder img{
+	width:	96%;
+	float:	right;
+}
+.project_holder p{
+	margin-left: 10px;
 }
