@@ -5,9 +5,15 @@ class ProjectsContainerPage extends Page {
 	static $allowed_children = array('ProjectPage');
 	
 	static $default_child = 'ProjectPage';
+
+	static $db = array(
 			
+	);
+	
 	static $has_many = array(
 	);
+	
+
 	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();  
@@ -19,24 +25,11 @@ class ProjectsContainerPage extends Page {
 	
 }
 class ProjectsContainerPage_Controller extends Page_Controller {
-	public function getProjects()
-	{
-		$filter = "ClassName IN('ProjectPage') ";
-	
-		$pages = DataObject::get('SiteTree', $filter, "Status = 'Published'");
-	
-		if(count($pages) == 0) {
-			return null;
-		}
-		//var_dump($pages->items[0]); exit;
-		$this->projectPages = $pages;
-		return $this->projectPages;
-	}
 	
 	public function getCompletedProjects()
 	{
 		$filter = "ClassName IN('ProjectPage') ";
-	
+
 		$pages = DataObject::get('SiteTree', $filter, "Status = 'Published'");
 		
 		if(count($pages) == 0) {

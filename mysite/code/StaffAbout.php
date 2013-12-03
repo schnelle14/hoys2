@@ -18,7 +18,7 @@ class StaffAbout extends DataObject {
 	function getCMSFields_forPopup() {
 		$fields = new FieldSet();
 		 
-		$fields->push( new ImageField('Photo'));
+		$fields->push( new ImageField('Photo', 'Photo', null, null, null, 'Staff'));
 		$fields->push( new TextField( 'Name_en', 'Name_en' ) );
 		$fields->push( new TextField( 'Name_zh', 'Name_chinese' ) );
 		$fields->push( new TextField( 'Position_en', 'Position_en' ) );
