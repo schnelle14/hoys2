@@ -330,8 +330,9 @@ input.button {
 	margin: 0 auto;
 	padding-left: 15px;
 }
+
 #footer-content a {
-		
+    color: #FFFFFF;
 }
 #footer-content a:hover {
 	text-decoration: underline;
@@ -510,15 +511,36 @@ ul#SearchResults li {
 	width: 50%;
 	height: auto;
 	display: inline-block;
+	float: left;
 }
 #latest_projects{
 	width: 48%;
 	height: auto;
 	display: inline-block;
+	float: right;
+}
+#latest_projects img {
+    width: 100%;
+}
+#latest_projects div {
+    display: inline-block;
+    width: 48%;
+}
+#latest_projects p {
+    margin-left: 0;
+}
+.right_image {
+     margin-left: 15px;
 }
 #home_welcome{
 	color: #0C3C64;
     font-size: 20px;
+    font-weight: bolder;
+    margin: 30px 0 10px 25px;
+}
+.home_label{
+	color: #0C3C64;
+    font-size: 12px;
     font-weight: bolder;
     margin: 30px 0 10px 25px;
 }
