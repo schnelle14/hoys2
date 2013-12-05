@@ -33,7 +33,8 @@ class ContactUsPage extends Page {
 				'StaffContacts',
 				'StaffContact',
 				array(	
-						'Name'					=> 'Name',
+						'Name_en'					=> 'Name_en',
+						'Name_zh'					=> 'Name_chinese',
 						'MobileNo1'             => 'Mobile# 1',
 						'MobileNo2'             => 'Mobile# 2',
 						'Landline'  	        => 'Landline',
