@@ -20,7 +20,7 @@ class ProjectPage extends Page {
 
 		$fields->addFieldToTab('Root.Content.Main', new DropdownField('ProjectStatus', 'Status', self::$status), 'Content');
 		
-		$fields->addFieldToTab("Root.Content.Images", new ImageField('ProjectImage', 'Project Image', null, null, null, 'Projects'));
+		$fields->addFieldToTab("Root.Content.Images", new ImageField('ProjectImage', 'Project Image (630 x 420)', null, null, null, 'Projects'));
 		
 		return $fields;
 	}

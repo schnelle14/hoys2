@@ -274,7 +274,7 @@ input.button {
 #main {
 	float: left;
 	width: 100%;	
-	margin: 0 0 10px 0; padding: 0;	
+	margin: 40px 0 10px 0; padding: 0;	
 }
 #main h1 {
 	padding: 10px 0px 0px 5px;
@@ -282,10 +282,6 @@ input.button {
 	border-bottom: 1px solid #f2f2f2; 	
 	font: normal 1.5em 'Trebuchet MS', Tahoma, Sans-serif;
 }
-#main ul li {
-	list-style-image: url(../images/bullet.gif);
-}
-
 .tabstrip li {
 	list-style-image: none !important;
 }
@@ -373,8 +369,14 @@ p.footer_title{
 p, h1,h2,h3 {
 	margin: 10px 15px;
 }
+h3{
+	margin-left: 0;
+}
+ul{
+	list-style: none;
+}
 ul, ol {
-	margin: 10px 30px;
+	margin: 0 10px;
 	padding: 0 15px;		
 }
 
@@ -536,13 +538,13 @@ ul#SearchResults li {
 	color: #0C3C64;
     font-size: 20px;
     font-weight: bolder;
-    margin: 30px 0 10px 25px;
+    margin: 0 0 10px 25px;
 }
 .home_label{
 	color: #0C3C64;
     font-size: 12px;
     font-weight: bolder;
-    margin: 30px 0 10px 25px;
+    margin: 0 0 10px 25px;
 }
 
 /* Contact Us Page
@@ -579,7 +581,6 @@ ul#SearchResults li {
 .PageType_AboutUsPage .typography, 
 .PageType_ProjectsContainerPage .typography{
 	text-align: center;
-	margin-top: 40px;
 }
 .staff_container {
     margin-top: 40px;
@@ -605,9 +606,7 @@ ul#SearchResults li {
 
 /* Projects Container
 *******************************************/
-.PageType_ProjectsContainerPage h3{
-	margin-left: 0;
-}
+
 .projects_container_div {
     border-top: 1px solid #c1cdcd;
     margin: 8px 0 35px;
@@ -623,4 +622,53 @@ ul#SearchResults li {
 }
 .project_holder p{
 	margin-left: 10px;
+}
+
+/* Project Page
+******************************************/
+
+.PageType_ProjectPage .typography {
+    border-right: 1px solid #c1cdcd;
+    height: 100%;
+    width: 68%;
+    display: inline-block;
+    float: left;
+}
+.PageType_ProjectPage .project_content {
+    display: inline-block;
+    height: 100%;
+    width: 75%;
+    float: left;
+}
+.PageType_ProjectPage .project_links {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 25%;
+}
+.PageType_ProjectPage .more_projects {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 28%;
+}
+.project_image {
+    margin-bottom: 20px;
+}
+.more_projects h3{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c1cdcd;
+	margin-right: 0;
+	color: #0C3C64;
+}
+.more_projects img{
+	width: 100%;
+}
+.project_links li {
+    margin-bottom: 15px;
+}
+.link_label {
+    margin-left: 10px;
+    color: #0C3C64;
+    font-weight: bold;
 }
