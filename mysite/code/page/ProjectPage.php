@@ -7,7 +7,8 @@ class ProjectPage extends Page {
 		'ProjectStatus' => 'Text'
 	);
 	static $has_one = array(
-		'ProjectImage' => 'Image'
+		'ProjectImage' => 'Image',
+		'PdfDocument' => 'File'
 	); 
 	static $has_many = array(
 			'ProjectImages'    => 'ProjectImage'
@@ -22,15 +23,17 @@ class ProjectPage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->addFieldToTab('Root.Content.Main', new DropdownField('ProjectStatus', 'Status', self::$status), 'Content');
+		$pdfDocField = new FileIFrameField('PdfDocument', 'PDF Document');
+		//$pdfDocField->setFolderName($this->AssetsFolder('PDFDocs'));
+		$fields->addFieldToTab('Root.Content.Main', $pdfDocField, 'Content');
 		
 		$fields->addFieldToTab("Root.Content.Images", new ImageField('ProjectImage', 'Main Project Image (630 x 420)', null, null, null, 'Projects'));
-		
 		$imagesTablefield = new ComplexTableField(
 				$this,
 				'ProjectImages',
 				'ProjectImage',
 				array(
-						'Thumbnail'       	  => 'Image',
+						'Thumbnail'       => 'Image',
 						'ImageDesc_en'    => 'Image Description_en',
 						'ImageDesc_zh'    => 'Image Description_chinese'
 				),
