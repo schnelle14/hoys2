@@ -8,7 +8,11 @@
 
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
 		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="/mysite/thirdparty/fancybox/jquery.fancybox.css" media="screen" />
+		<link rel="stylesheet" href="/mysite/thirdparty/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+		
 		<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="/mysite/thirdparty/fancybox/jquery.fancybox.pack.js"></script>
 		
 </head>
 <body class="$BodyCssClass">

@@ -16,6 +16,14 @@
 
 <div class="more_projects">
 	<h3>MORE PROJECTS</h3>
-	$ProjectImage.SetSize(230, 155)
+	<% control getMoreProjects %>
+		<a href="$page.Link">$page.ProjectImage</a>
+		<p><a href="$page.Link">$page.Title</a></p>
+	<% end_control %>
 </div>
 
+<div>
+<% control getProjectImages %>
+	$Image
+<% end_control %>
+</div>

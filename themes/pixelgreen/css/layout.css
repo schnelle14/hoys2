@@ -661,6 +661,9 @@ ul#SearchResults li {
 	margin-right: 0;
 	color: #0C3C64;
 }
+.more_projects p{
+	margin-left: 0;
+}
 .more_projects img{
 	width: 100%;
 }
