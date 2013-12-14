@@ -510,7 +510,7 @@ ul#SearchResults li {
 /* Homepage content
 ****************************************/
 .PageType_HomePage .typography{
-	width: 100%;
+	width: 50%;
 	height: auto;
 	display: inline-block;
 	float: left;
