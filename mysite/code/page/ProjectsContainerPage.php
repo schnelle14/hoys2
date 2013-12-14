@@ -46,7 +46,6 @@ class ProjectsContainerPage_Controller extends Page_Controller {
 				$completedProjects->push($completedProject);
 			}
 		}
-		//var_dump($completedProjects->items[0]); exit;
 		return $completedProjects;
 	}
 	

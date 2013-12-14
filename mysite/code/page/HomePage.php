@@ -20,7 +20,6 @@ class HomePage extends Page {
 		if(count($pages) == 0) {
 			return null;
 		}
-		//var_dump($pages->items[0]); exit;
 		$this->projectPages = $pages;
 		return $this->projectPages;
 	}

@@ -78,8 +78,6 @@ class ContactUsPage_Controller extends Page_Controller {
 		return true;
 	}
 	public function teamEmailExists(){
-		//$tempo1 = DataObject::get("StaffContact");
-		//var_dump($this->StaffContacts); exit;
 		if ($this->Team_email == null){
 			return false;
 		}

@@ -15,8 +15,10 @@ class ProjectImage extends DataObject {
 	);
 	function getCMSFields_forPopup() {
 		$fields = new FieldSet();
+		$projectFolderName=str_replace(" ", "_", $this->getComponent("MyProjectPage")->Title);
+		$projectFolderName = 'Projects/' . $projectFolderName . '/Gallery/';
 		 
-		$fields->push( new ImageField('Image', 'Project Image', null, null, null, 'Project_Images'));
+		$fields->push( new ImageField('Image', 'Project Image', null, null, null, $projectFolderName));
 		$fields->push( new TextField( 'ImageDesc_en', 'Image Description_en' ) );
 		$fields->push( new TextField( 'ImageDesc_zh', 'Image Description_chinese' ) );
 		 
@@ -26,8 +28,6 @@ class ProjectImage extends DataObject {
 
 	function getThumbnail()
 	{
-		//var_dump($this->getComponent("MyProjectPage")); exit;
-		//var_dump($this); exit;
 		if ($Image = $this->Image())
 		{
 			return $Image->CMSThumbnail();

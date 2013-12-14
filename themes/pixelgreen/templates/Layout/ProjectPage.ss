@@ -7,9 +7,9 @@
 		</div>
 		<div class="project_links">
 			<ul>
-				<li><a href="project_gallery_link"><img src="themes/pixelgreen/images/icon_gallery.png" alt="project1png"/></a><a class="link_label" href="project_gallery_link">View Gallery</a></li>
-				<li><a href="project_pdf_link"><img src="themes/pixelgreen/images/icon_pdf.png" alt="project1png"/></a><a class="link_label" href="project_pdf_link">Download PDF</a></li>
-				<li><a href="print_link"><img src="themes/pixelgreen/images/icon_print.png" alt="project1png"/></a><a class="link_label" href="print_link">Print</a></li>
+				<% if pdfExists %>
+				<li><a href="$PdfDocument.Link"><img src="themes/pixelgreen/images/icon_pdf.png" alt=""/></a><a class="link_label" href="$PdfDocument.Link">Download PDF</a></li>
+				<% end_if %>
 			</ul>
 		</div>
 </div>
@@ -22,8 +22,4 @@
 	<% end_control %>
 </div>
 
-<div>
-<% control getProjectImages %>
-	$Image
-<% end_control %>
-</div>
+

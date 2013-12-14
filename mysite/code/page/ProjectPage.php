@@ -21,13 +21,21 @@ class ProjectPage extends Page {
 	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-
+		$projectFolderName=str_replace(" ", "_", $this->Title);
+		$projectFolderName = 'Projects/' . $projectFolderName . '/';
+		
+		// status
 		$fields->addFieldToTab('Root.Content.Main', new DropdownField('ProjectStatus', 'Status', self::$status), 'Content');
+		
+		// pdf file
 		$pdfDocField = new FileIFrameField('PdfDocument', 'PDF Document');
-		//$pdfDocField->setFolderName($this->AssetsFolder('PDFDocs'));
+		$pdfDocField->setFolderName($projectFolderName);
 		$fields->addFieldToTab('Root.Content.Main', $pdfDocField, 'Content');
 		
-		$fields->addFieldToTab("Root.Content.Images", new ImageField('ProjectImage', 'Main Project Image (630 x 420)', null, null, null, 'Projects'));
+		// main image
+		$fields->addFieldToTab("Root.Content.Images", new ImageField('ProjectImage', 'Main Project Image (630 x 420)', null, null, null, $projectFolderName));
+		
+		// gallery images
 		$imagesTablefield = new ComplexTableField(
 				$this,
 				'ProjectImages',
@@ -46,11 +54,9 @@ class ProjectPage extends Page {
 	}
 	
 	public function getMoreProjects() {
-		//var_dump($this->Title); exit;
 		$filter = "ClassName IN('ProjectPage') ";
 	
 		$pages = DataObject::get('SiteTree', $filter, "Status = 'Published'");
-		//var_dump(count($pages)-1); exit;
 		if(count($pages) == 0) {
 			return null;
 		}
@@ -58,7 +64,6 @@ class ProjectPage extends Page {
 		$moreProjects = new DataObjectSet();
 		$index = count($pages)-1;
 		for ($x=0; $x <= $index; $x++){
-			//var_dump($pages->items[$x]); exit;
 			if ($pages->items[$x]->Title == $this->Title){
 				$project1 = new DataObject;
 				$project2 = new DataObject;
@@ -96,16 +101,22 @@ class ProjectPage extends Page {
 				}
 			} 
 		}
-		//var_dump($moreProjects); exit;
 		return $moreProjects;
 	}
 }
 
 class ProjectPage_Controller extends Page_Controller {
+	
+	
 	public function getProjectImages(){
-		//var_dump($this->ID); exit;
 		$images = DataObject::get("ProjectImage", "\"MyProjectPageID\"=" . $this->ID);
-		//var_dump($images); exit;
 		return $images;
+	}
+	
+	public function pdfExists(){
+		if ($this->PdfDocumentID > 0){
+			return true;
+		}
+		return false;
 	}
 }
