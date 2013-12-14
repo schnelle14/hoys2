@@ -2,7 +2,8 @@
 class StaffContact extends DataObject {
 
 	static $db = array(
-			'Name'		=> 'Text',
+			'Name_en'		=> 'Text',
+			'Name_zh'		=> 'Text',
 			'MobileNo1' => 'Text',
 			'MobileNo2' => 'Text',
 			'Landline'  => 'Text',
@@ -16,7 +17,8 @@ class StaffContact extends DataObject {
 	function getCMSFields_forPopup() {
 		$fields = new FieldSet();
 		 
-		$fields->push( new TextField( 'Name', 'Name' ) );
+		$fields->push( new TextField( 'Name_en', 'Name_en' ) );
+		$fields->push( new TextField( 'Name_zh', 'Name_chinese' ) );
 		$fields->push( new TextField( 'MobileNo1', 'Mobile# 1' ) );
 		$fields->push( new TextField( 'MobileNo2', 'Mobile# 2' ) );
 		$fields->push( new TextField( 'Landline', 'Landline' ) );

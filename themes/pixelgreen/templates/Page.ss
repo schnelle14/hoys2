@@ -6,9 +6,21 @@
 		
 		$MetaTags
 
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="/mysite/thirdparty/fancybox/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="/mysite/thirdparty/fancybox/jquery.fancybox.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/mysite/thirdparty/fancybox/helpers/jquery.fancybox-thumbs.css"  media="screen" />
+<script type="text/javascript" src="/mysite/thirdparty/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+
+
+
+<script type="text/javascript" src="/mysite/js/hoys.js"></script>
+
 		
 </head>
 <body class="$BodyCssClass">
@@ -64,4 +76,6 @@
 </div>
 
 </body>
+
 </html>
+

@@ -42,7 +42,6 @@ class Page extends SiteTree {
 		}
 	
 		$this->contactUsPage = $pages->First();
-		//var_dump($this->contactUsPage); exit;
 		return $this->contactUsPage;
 	}
 }
@@ -82,11 +81,7 @@ class Page_Controller extends ContentController {
 		// instead of putting Requirements calls here.  However these are 
 		// included so that our older themes still work
 		Requirements::themedCSS('layout'); 
-		Requirements::themedCSS('typography'); 
-		Requirements::themedCSS('form'); 
 		
-		//var_dump($this->Small_HeroImageID); exit;
-		//var_dump($Small_HeroImageID); exit;
 		if($this->dataRecord->hasExtension('Translatable')) {
 			i18n::set_locale($this->dataRecord->Locale);
 		}
@@ -125,4 +120,31 @@ class Page_Controller extends ContentController {
 		}
 		return false;
 	}
+	
+	public function getLocale(){
+		return $this->dataRecord->Locale;
+	}
+	
+	public function isEnglish(){
+		
+		if ($this->dataRecord->Locale == "en_NZ"){
+			return true;
+		}
+		return false;
+	}
+	
+	public function isChinese(){
+		if ($this->dataRecord->Locale == "zh_cmn"){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
