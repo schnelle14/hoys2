@@ -496,7 +496,7 @@ ul#SearchResults li {
 .hero_image img {
     height: 230px;
     width: 100%;
-    min-width: 1500px;
+    min-width: 900px;
 }
 .pagetitle {
     bottom: 0;
