@@ -18,7 +18,7 @@ body {
 	color: #555;
 	background-color: #003a68;
 	text-align: center;	
-	min-width: 1500px;
+	min-width: 900px;
 		
 }
 
@@ -487,7 +487,7 @@ ul#SearchResults li {
 .home_hero_image img {
     width: 100%;
     height: 400px;
-    min-width: 1500px;
+    min-width: 900px;
 }
 .hero_image, .home_hero_image {
     position: relative;
