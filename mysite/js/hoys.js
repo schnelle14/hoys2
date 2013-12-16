@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 $(document).ready(function() {
 //	$(".fancybox-thumb").fancybox({
 //		prevEffect	: 'none',
@@ -20,5 +20,8 @@ $(document).ready(function() {
 		$(".fancybox-thumb:first").trigger('click');
 	});
 	
+	if ($('body').hasClass('PageType_ProjectPage')){
+		$('li.navtext a:contains("PROJECTS")').addClass('current');
+	}
+	
 });
-</script>
