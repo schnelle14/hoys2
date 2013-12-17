@@ -24,7 +24,7 @@ body {
 
 /* links */
 a { background: inherit; text-decoration: none; }
-a:hover { background: inherit; color: #006699; text-decoration: underline; }
+a:hover { color: #006699; text-decoration: underline; }
 
 /* start - table */
 table {
