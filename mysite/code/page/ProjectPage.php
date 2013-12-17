@@ -42,8 +42,7 @@ class ProjectPage extends Page {
 				'ProjectImage',
 				array(
 						'Thumbnail'       => 'Image',
-						'ImageDesc_en'    => 'Image Description_en',
-						'ImageDesc_zh'    => 'Image Description_chinese'
+						'ImageDesc'       => 'Image Description',
 				),
 				'getCMSFields_forPopup',
 				"`MyProjectPageID` = '$this->ID'"
