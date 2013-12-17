@@ -2,8 +2,7 @@
 class ProjectImage extends DataObject {
 
 	static $db = array(
-			'ImageDesc_en' => 'Text',
-			'ImageDesc_zh' => 'Text'
+			'ImageDesc' => 'Text',
 	);
 
 	static $has_one = array(
@@ -19,8 +18,7 @@ class ProjectImage extends DataObject {
 		$projectFolderName = 'Projects/' . $projectFolderName . '/Gallery/';
 		 
 		$fields->push( new ImageField('Image', 'Project Image', null, null, null, $projectFolderName));
-		$fields->push( new TextField( 'ImageDesc_en', 'Image Description_en' ) );
-		$fields->push( new TextField( 'ImageDesc_zh', 'Image Description_chinese' ) );
+		$fields->push( new TextField( 'ImageDesc', 'Image Description' ) );
 		 
 		return $fields;
 	}

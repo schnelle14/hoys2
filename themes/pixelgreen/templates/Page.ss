@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<!doctype html>
  <head>
 		<% base_tag %>
 		
@@ -8,18 +6,10 @@
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
 <link rel="shortcut icon" href="/favicon.ico" />
-<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
-
-
 <link rel="stylesheet" type="text/css" href="/mysite/thirdparty/fancybox/jquery.fancybox.css" media="screen" />
-<script type="text/javascript" src="/mysite/thirdparty/fancybox/jquery.fancybox.js"></script>
 
 <link rel="stylesheet" type="text/css" href="/mysite/thirdparty/fancybox/helpers/jquery.fancybox-thumbs.css"  media="screen" />
-<script type="text/javascript" src="/mysite/thirdparty/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
 
-
-
-<script type="text/javascript" src="/mysite/js/hoys.js"></script>
 
 		
 </head>
@@ -74,7 +64,10 @@
 <!-- footer ends here -->	
 <!-- wrap ends here -->
 </div>
-
+<script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/mysite/thirdparty/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/mysite/thirdparty/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript" src="/mysite/js/hoys.js"></script>
 </body>
 
 </html>
