@@ -20,6 +20,7 @@
 				<% if pdfExists %>
 				<li><a href="$PdfDocument.Link"><img src="themes/pixelgreen/images/icon_pdf.png" alt=""/></a><a class="link_label" href="$PdfDocument.Link">Download PDF</a></li>
 				<% end_if %>
+				<li><a href="javascript:printDiv()"><img src="themes/pixelgreen/images/icon_print.png" alt=""/></a><a class="link_label" href="javascript:printDiv()">Print</a></li>
 			</ul>
 		</div>
 </div>

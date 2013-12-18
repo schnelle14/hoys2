@@ -67,6 +67,7 @@
 <script type="text/javascript" src="/mysite/thirdparty/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="/mysite/thirdparty/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="/mysite/thirdparty/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript" src="/mysite/thirdparty/jquery.PrintArea.js"></script>
 <script type="text/javascript" src="/mysite/js/hoys.js"></script>
 </body>
 
