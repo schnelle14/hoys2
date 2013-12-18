@@ -8,7 +8,7 @@
   PixelGreen design by Erwin Aligam
   http://www.styleshout.com/
 */
-
+@media screen {
 /* top elements */
 * { padding: 0; margin: 0; }
 
@@ -674,4 +674,10 @@ ul#SearchResults li {
     margin-left: 10px;
     color: #0C3C64;
     font-weight: bold;
+}
+}
+@media print {
+.project_links{
+	display: none;
+}
 }

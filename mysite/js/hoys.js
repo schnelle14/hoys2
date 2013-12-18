@@ -23,3 +23,7 @@ $(document).ready(function() {
 	}
 	
 });
+
+function printDiv(){
+	$('.PageType_ProjectPage div.typography').printArea();
+}
