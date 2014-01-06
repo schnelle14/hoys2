@@ -8,8 +8,8 @@ $(document).ready(function() {
 				type: 'outside'
 			},
 			thumbs	: {
-				width	: 50,
-				height	: 50
+				width	: 100,
+				height	: 100
 			}
 		}
 	});

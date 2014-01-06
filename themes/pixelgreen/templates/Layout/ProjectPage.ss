@@ -1,4 +1,31 @@
-<div class="typography">	
+<div class="typography">
+		<div class="print_header">
+			<div>
+			$HomePageObject.Logo_Image
+			</div>
+			<% control ContactUsPageObject %>
+			<div class="first_col">
+				<table>
+					<tr>
+						<td class="small_contact_label">Landline:</td>
+						<td>$Landline_no</td>
+					</tr>
+					<tr>
+						<td class="small_contact_label">Fax:</td>
+						<td>$Fax_no</td>
+					</tr>
+					<tr>
+						<td class="small_contact_label">Email:</td>
+						<td>$Team_email</td>
+					</tr>
+					<tr>
+						<td class="small_contact_label">Website:</td>
+						<td>www.hoysinvestment.co.nz</td>
+					</tr>
+				</table>		
+			</div>		
+			<% end_control %>
+		</div>	
 		<div class="project_image">
 		$ProjectImage.SetSize(630, 420)
 		</div>
