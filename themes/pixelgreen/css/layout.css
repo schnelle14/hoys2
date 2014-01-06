@@ -675,9 +675,18 @@ ul#SearchResults li {
     color: #0C3C64;
     font-weight: bold;
 }
+.print_header{
+	display: none;
+}
 }
 @media print {
 .project_links{
 	display: none;
+}
+.print_header > div {
+    display: inline-block;
+}
+.print_header table td {
+    padding-left: 10px;
 }
 }
