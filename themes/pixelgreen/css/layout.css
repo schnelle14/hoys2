@@ -522,7 +522,8 @@ ul#SearchResults li {
 	float: right;
 }
 #latest_projects img {
-    width: 100%;
+    height: 160px;
+    width: 230px;
 }
 #latest_projects div {
     display: inline-block;
@@ -655,6 +656,10 @@ ul#SearchResults li {
 .project_image {
     margin-bottom: 20px;
 }
+.project_image > img {
+    height: 420px;
+    width: 630px;
+}
 .more_projects h3{
 	padding-bottom: 10px;
 	border-bottom: 1px solid #c1cdcd;
@@ -678,7 +683,14 @@ ul#SearchResults li {
 .print_header{
 	display: none;
 }
+
+.staff_photo img {
+    height: 175px;
+    width: 175px;
 }
+}
+
+
 @media print {
 .project_links{
 	display: none;
