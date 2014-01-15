@@ -2,7 +2,7 @@
 		$Content
 </div>
 	
-<h3>Completed Projects</h3>	
+<h3><% _t('completed','Completed Projects') %></h3>	
 <div class="projects_container_div">
 	<% control getCompletedProjects %>
 	<div class="project_holder">
@@ -12,7 +12,7 @@
 	<% end_control %>
 </div>
 	
-<h3>Current Projects</h3>
+<h3><% _t('current','Current Projects') %></h3>
 <div class="projects_container_div">		
 	<% control getCurrentProjects %>
 	<div class="project_holder">
