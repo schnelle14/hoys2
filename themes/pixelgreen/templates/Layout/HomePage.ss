@@ -7,7 +7,7 @@
 </div>
 
 <div id="latest_projects">
-	<p class="home_label">Latest Projects</p>
+	<p class="home_label"><% _t('latest','Latest Projects') %></p>
 	<% control getProject1 %>
 		<div class="left_image">
 			<a href="$Link">$ProjectImage</a>
